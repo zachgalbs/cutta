@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Run()
     {
-        UnityEngine.Vector2 playerVelocity = new UnityEngine.Vector2(moveInput.x * move, rb.linearVelocity.y);
+        UnityEngine.Vector2 playerVelocity = new UnityEngine.Vector2(moveInput.x * runSpeed, rb.linearVelocity.y);
         rb.linearVelocity = playerVelocity;
     }
     void FlipSprite()
